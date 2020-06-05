@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/escudo" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="436dp"
+        android:orientation="vertical"
+        android:layout_marginTop="44dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.306"
+        tools:layout_editor_absoluteX="-5dp">
+
+        <Button
+            android:id="@+id/buttonPinacoteca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorPrimary"
+            android:text="Pinacoteca"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonOpac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorPrimary"
+            android:text="Opac"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonRepertorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginBottom="64dp"
+            android:background="@color/colorPrimary"
+            android:text="Repertorio Histórico"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
